@@ -1,0 +1,16 @@
+# Generated on 2026-07-02 17:14:49
+model: RDT_demo_clean
+data_path: training_data/RDT_demo_clean_adjust_bottle
+checkpoint_path: checkpoints/RDT_demo_clean_adjust_bottle
+pretrained_model_name_or_path: ../weights/RDT/rdt-1b
+cuda_visible_device: '0,1'
+train_batch_size: 4
+sample_batch_size: 20
+max_train_steps: 20000
+checkpointing_period: 2500
+sample_period: 500
+checkpoints_total_limit: 40
+learning_rate: 0.0001
+dataloader_num_workers: 8
+state_noise_snr: 40
+gradient_accumulation_steps: 1
